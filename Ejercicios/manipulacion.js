@@ -31,3 +31,14 @@ console.log(telefonos.some(numero => {
     return numerostelf[numerostelf.length - 1] == "3";
 }));
 //devuelve los numeros de telefono que terminen en 3
+
+//Ejercicio 7
+//map
+let arrayPalabras = ["casa","abedul","coche","rio","alameda","alegría","portón"];
+let arrayMayus = arrayPalabras.map(palabra => palabra[0].toLocaleUpperCase() +
+palabra.slice(1));
+
+//reduce
+let cadenaUnica = arrayPalabras.reduce((valorAnt,valorAct) => valorAnt + valorAct);
+let cadenaUnica2 = arrayPalabras.reduce((valorAnt,valorAct) => valorAnt + valorAct,"Concatenados: "); 
+let arrayPalabras = ["casa","abedul","coche","rio","alameda","alegría","portón"];
